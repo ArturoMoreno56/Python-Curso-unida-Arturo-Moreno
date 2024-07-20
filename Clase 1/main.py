@@ -1,6 +1,0 @@
-
-
-
-print("Hola mundo")
-
-
