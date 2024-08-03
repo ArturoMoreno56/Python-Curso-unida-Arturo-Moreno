@@ -8,7 +8,7 @@ lista entera
 '''
 print(lista)
 
-print(lista[:2])
+print(lista[2:])
 
 print(lista[3])
 

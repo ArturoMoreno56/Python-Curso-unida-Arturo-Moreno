@@ -1,5 +1,4 @@
 
-
 def suma(lista):
     suma=0
     for i in lista:
@@ -7,7 +6,7 @@ def suma(lista):
 
     return suma
 
-def prom(lista):
+def promedio_lista(lista):
     prom=0
     tamb=len(lista)
 
@@ -35,7 +34,7 @@ def menor(lista):
 
 def mayor_prom(lista):
     lista_may=[]
-    prob=prom(lista)
+    prob=promedio_lista(lista)
     for i in lista:
         if i>prob:
             lista_may.append(i)
@@ -45,14 +44,14 @@ def mayor_prom(lista):
 
 
 def cargar(lista):
-     lista_Cargar=[]
-     n=int(input("Ingrese un elemento para la lista -99 para salir: "))
+    lista_Cargar = []
+    n = int(input("Ingrese un elemento para la lista -99 para salir: "))
 
-     while n!=-99:
+    while n != -99:
         lista_Cargar.append(n)
-        n=int(input("Ingrese un elemento para la lista -99 para salir :"))
-
-        return lista_Cargar
+        n = int(input("Ingrese un elemento para la lista -99 para salir: "))
+    
+    return lista_Cargar
 
 def main():
     
@@ -66,7 +65,7 @@ def main():
     print(lista)
 
     print(f"La suma de elementos es {suma(lista)}")
-    print(f"EL promedio es {prom(lista)}")
+    print(f"EL promedio es {promedio_lista(lista)}")
     print(f"El mayor es {mayor(lista)} y el menor {menor(lista)}")
     print(f"Mayores a promedio {mayor_prom(lista)}")
 
